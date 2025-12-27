@@ -1,6 +1,6 @@
 # Computer Vision Measurement System
 
-A real-time, interactive computer vision measurement tool built with OpenCV.
+A real-time, interactive computer vision measurement tool built with OpenCV.  
 This application enables **precise distance and angle measurements** using a webcam or static images, enhanced by a **modern glassmorphic UI**, zoom/pan controls, and intelligent calibration options.
 
 ---
@@ -27,9 +27,9 @@ This application enables **precise distance and angle measurements** using a web
 ### 🎛 Calibration Options
 - **Default Camera Calibration**
 - **Reference-Based Calibration**
-  - Define real-world size for accurate measurements
+  - Define a real-world size for accurate measurements
 - **Depth-Based Estimation**
-  - Adjustable depth (I / O keys)
+  - Adjustable depth using keyboard controls (I / O)
 
 ### 🔍 View Controls
 - **Zoom In / Out** (up to 5×)
@@ -47,13 +47,18 @@ This application enables **precise distance and angle measurements** using a web
 
 ## 🧰 Technology Stack
 
-- **Python 3.12(required version)**
+- **Python 3.12 (required)**
 - **OpenCV**
 - **NumPy**
 - Native OpenCV GUI (no external UI frameworks)
 
-**Notes**
-we also use `pickle`, `os`, `pathlib`, and `math`-related utilities which are part of Python’s standard library.
+### Notes
+This project also uses:
+- `pickle`
+- `os`
+- `pathlib`
+
+These are part of Python’s **standard library** and do not require installation.
 
 ---
 
@@ -74,7 +79,9 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 ### 3️⃣ Install dependencies
 
-mentionned in requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
@@ -87,7 +94,7 @@ python measurement_app.py
 Make sure:
 
 * A webcam is connected (for live mode)
-* OpenCV can access your camera
+* OpenCV has permission to access your camera
 
 ---
 
@@ -144,11 +151,10 @@ Make sure:
 ### Calibration
 
 1. Select **Calibration Mode**
-2. Click two points on a known object
-3. Enter real-world distance (cm)
+2. Click two points on an object of known size
+3. Enter the real-world distance (cm)
 
 ---
-
 
 ## ⚠ Limitations & Notes
 
@@ -167,7 +173,7 @@ See the [LICENSE](LICENSE) file for details.
 
 ## ⭐ Contributing
 
-This is a learning project purely made for entertainment purposes, if you have any fun suggestions or ideas dont hesitate to contact me on linked in or via email <3.
-Happy coding!
+This is a learning project made purely for entertainment and experimentation.
+If you have fun ideas or suggestions, feel free to reach out via **LinkedIn** or **email** ❤️
 
----
+Happy coding!
