@@ -1,7 +1,3 @@
-"""
-Advanced Computer Vision Measurement System
-Real-time precision measurement using webcam with intelligent positioning
-"""
 import cv2
 import numpy as np
 import pickle
